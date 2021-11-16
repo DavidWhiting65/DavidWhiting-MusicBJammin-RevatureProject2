@@ -1,0 +1,43 @@
+<h2>Registration</h2>
+
+<form [formGroup]="registerForm">
+
+    Enter first name:<br>
+    <mat-form-field>
+        <input matInput placeholder="first_name" formControlName="first_name">
+    </mat-form-field>
+    <br>
+    Enter last name:<br>
+    <mat-form-field>
+        <input matInput placeholder="last_name" formControlName="last_name">
+    </mat-form-field>
+    <br>
+    Enter username:<br>
+    <mat-form-field>
+        <input matInput placeholder="username" formControlName="username">
+    </mat-form-field>
+    <br>
+    Enter password:<br>
+    <mat-form-field>
+        <input matInput placeholder="password" formControlName="password">
+    </mat-form-field>
+    <br>
+    Enter user type:<br>
+    <mat-form-field>
+        <input matInput placeholder="user_type_id" [value]="1" formControlName="user_type_id">
+
+        <mat-hint align="end">Enter 1 for Fan, Enter 2 for Musician</mat-hint>
+
+        <!-- <mat-error *ngIf="user_type_id.errors?.min && user_type_id.touched">
+           Invalid Choice. 1 for Fan and 2 for Musician
+        </mat-error> -->
+    </mat-form-field>
+
+    <br>
+    <button mat-raised-button [disabled]="registerForm.invalid" color="primry" (click)=register()>Register</button>
+
+
+
+</form>
+
+<a routerLink="/login">Return to Login</a>

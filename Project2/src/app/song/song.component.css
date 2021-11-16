@@ -1,0 +1,13 @@
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: rgb(190, 138, 238);
+}
+
+.songName {
+    font-size: 20px;
+    font-style: italic;
+    border: 3px dotted;
+}

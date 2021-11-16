@@ -1,0 +1,15 @@
+<div><h1>WELCOME FAN!</h1>
+
+<h3>Follow A Musician</h3>
+Fan ID: <input type="text" [(ngModel)]="this.fans_id">
+Musician ID: <input type="text" [(ngModel)]="this.musicians_id">
+<button (click)="followMusician()">Follow Musician</button>
+<p>Fan ID {{ this.fans_id }}    Musician ID {{ this.musicians_id }}</p>
+<h3>Followers</h3></div>
+<div *ngFor="let follower of followers">
+    <p>Follower ID: {{ follower.followers_id }}, Fan ID: {{ follower.fans_id }}, Musician ID: {{ follower.musicians_id}}</p>
+</div>
+
+<div><app-catalogue></app-catalogue>
+
+<a routerLink="/login">Logout</a></div>

@@ -1,0 +1,16 @@
+<a routerLink="/register">Register</a>
+<br>
+<!-- <a routerLink="/login">Login</a> -->
+
+<div>
+    <label for="username">Username: </label>
+    <input id="username" #username>
+    <label for="password">Password: </label>
+    <input id="password" #password>
+</div>
+<button (click)="getUser(username.value, password.value)">Login</button>
+<br>
+<!-- below is temporary for testing routing logic -->
+<a routerLink="/musicianhomepage">Go to Musician Homepage</a>
+<br>
+<a routerLink="/userhomepage">Go to User Homepage</a>

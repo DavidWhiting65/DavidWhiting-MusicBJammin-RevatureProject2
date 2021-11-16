@@ -1,0 +1,33 @@
+<div><hr/>
+<h1>WELCOME MUSICIAN!</h1>
+
+Add a Song <br>
+
+Song Title: <input type="text" [(ngModel)]="this.title">
+Musician ID: <input type="text" [(ngModel)]="this.musician_id">
+URL: <input type="text" [(ngModel)]="this.url">
+<button (click)="addSong()">Add Song</button>
+<p>Song Title {{ title }}    Musician ID {{ musician_id }}  url {{ url }}</p>
+
+<app-catalogue></app-catalogue>
+
+<a routerLink="/login">Logout</a>
+</div>
+
+<!-- Sample code for reference -->
+<!-- <div style="background-color: orange">
+<hr/>
+<h4>Sample code for reference only</h4>
+<ul>
+    <li *ngFor="let musician of musicians">
+        {{ musician.first_name }} {{ musician.last_name }}
+        <button *ngIf="musician.last_name == 'Garcia'" 
+            (click)="makePlaySong()"
+            [style.color]="playSong ? 'red' : 'green'"
+            >
+            HEYYYYYY NOWWWWW
+        </button>
+    </li>
+</ul>
+</div> 
+<app-song></app-song>-->

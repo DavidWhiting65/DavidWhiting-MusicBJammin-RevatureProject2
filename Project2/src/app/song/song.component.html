@@ -1,0 +1,44 @@
+<hr/>
+<h3>Songs</h3>
+<ul>
+    <li *ngFor="let song of songs">{{ song }}</li>
+</ul>
+
+<hr/>
+
+<!-- <h4>Sample NG Binding Code for Reference only</h4>
+<div *ngIf="condition">Song condition met</div>
+<div *ngIf="!condition">Song condition NOT met</div>
+<div *ngIf="anotherCondition">OTHER Song condition met</div>
+
+<button (click)="changeCondition()">Change Condition</button>
+
+<h3> Day & Night </h3>
+<div [ngSwitch]="time"
+    [ngStyle]="{'background-color': time === '' ? 'white' : time === 'day' ? 'aquamarine' : 'dimgrey'}">
+    <span *ngSwitchCase="'night'">
+        It's night.
+        <button (click)="changeTimeOfDay('day')">Change to Day!</button>
+    </span>
+    <span *ngSwitchCase="'day'">
+        It's day.
+        <button (click)="changeTimeOfDay('night')">Change to Night!</button>
+    </span>
+    <span *ngSwitchDefault>
+        What the time is it anyway?
+        <br/>
+        <button (click)="changeTimeOfDay('day')">Change to Day!</button>
+        <br/>
+        <button (click)="changeTimeOfDay('night')">Change to Night!</button>
+    </span>
+    </div>
+
+    <hr/>
+
+    Other Attribute Directives
+    Class Directives 
+    <h3 [ngClass]="'red'">Sample css class binding</h3> 
+    <div [ngClass]="['blue', 'songName']">Binding this div to the class 'songName'</div>
+ -->
+
+ 

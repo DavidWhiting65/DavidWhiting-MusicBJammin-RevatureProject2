@@ -1,0 +1,32 @@
+<div>
+<h1>LOGIN</h1>
+Username: <input type="text" [(ngModel)]="username">
+Password: <input type="text" [(ngModel)]="password">
+<button (click)="userLogin()">Login</button>
+<br>
+<br>
+<hr> 
+<br>
+<h3>NEW USERS</h3>
+<a routerLink="/register">
+    <button>Register</button>
+</a>
+</div>
+<!-- <p>{{username}} {{password}}</p> -->
+
+<!-- Name: {{ userprof.first_name }}  -->
+
+
+<!-- <div *ngFor="let user of users">
+    <p *ngIf="user.username == username">
+        Name: {{ user.first_name }} {{user.last_name}}
+        <br>
+        UN/PW: {{ user.username }} {{user.password}}
+        <br>
+        User type: {{ user.user_type_id}}
+        <br>
+        User ID: {{ user.userId}}
+    </p>
+
+
+</div> -->
